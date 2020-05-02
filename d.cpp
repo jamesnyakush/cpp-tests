@@ -14,9 +14,11 @@ int main()
 {
     ifstream ScoresFile;
     double Scores[10];
+
     int size;
     OpenFile(ScoresFile);
     GetScores(ScoresFile, Scores, size);
+
     MinMax(Scores, size);
     return (0);
 }

@@ -1,19 +1,29 @@
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
+using namespace std;
 
+//initializing pureText()
+void pureText();
+
+int main()
+{
+    // calling the function
+    pureText();
+}
 void pureText()
 {
-    ifstream read;
-    read.open("myNotes.txt");
-    while (!read.eof())
+    char c;
+
+    //reading  myNotes.txt file
+    ifstream in("myNotes.txt");
+
+    //looping through the characters in the text file
+    while (in.get(c))
     {
-        char str = read.get();
-        for (int i = 0; i & lt; str.length(); i++)
-        {
-            if (str[i])== 'k')
-                {
-                    str[i] = 'c';
-                }
-        }
+        if(c =='K')
+            c ='C';
+        cout << c;
     }
+    in.close();
 }

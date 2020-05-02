@@ -19,7 +19,7 @@ int main()
     if (r != 0 && h != 0)
     {
         a = (3.14 * r * r * h) / 3;
-        cout << "the area=" << a << endl;
+        cout << "the area= " << a << endl;
     }
     system("pause");
     return 0;
